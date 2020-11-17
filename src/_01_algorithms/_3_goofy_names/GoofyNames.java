@@ -18,13 +18,19 @@ System.out.println(userName.toUpperCase());
 		// 3. Loop through each character of the name (steps 4 - 7).
 		//    HINT: Use .length() to determine the number of characters in the String.
 int carNext = 0;
+int carNext2 = 0;
 for (int i = 0; i < userName.length(); i++) {
-	char nextCar = userName.charAt(carNext);
 	carNext = carNext + 1;
 	if(carNext%2==0) {
-		System.out.println("the character is");
+		userName.toUpperCase();
+		System.out.println(userName.charAt(carNext2));
 	}
-	
+	else {
+		
+		userName.toUpperCase();
+		System.out.println(userName.charAt(carNext2));
+	}
+	carNext2 = carNext2 + 1;
 }
 				// 4. Create a char variable to store the next character of the name
 				//    use .charAt()
