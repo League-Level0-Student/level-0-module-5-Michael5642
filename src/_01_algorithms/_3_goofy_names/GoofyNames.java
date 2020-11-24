@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 
 public class GoofyNames {
 	public static void main(String[] args) {
-		String goofyName = "Bumstickle";
+		String goofyName = "";
 
 		// 1. Ask the user to enter their name
 String userName = JOptionPane.showInputDialog("enter a name");
@@ -23,15 +23,18 @@ for (int i = 0; i < userName.length(); i++) {
 	carNext = carNext + 1;
 	if(carNext%2==0) {
 		userName.toUpperCase();
-		System.out.println(userName.charAt(carNext2));
+		char evenChars = Character.toUpperCase(userName.charAt(carNext2));
+		goofyName = goofyName + evenChars;
 	}
 	else {
 		
-		userName.toUpperCase();
-		System.out.println(userName.charAt(carNext2));
+		
+		char oddChars = Character.toLowerCase(userName.charAt(carNext2));
+		goofyName = goofyName + oddChars;
 	}
 	carNext2 = carNext2 + 1;
 }
+JOptionPane.showMessageDialog(null, "your goof name is: " + goofyName);
 				// 4. Create a char variable to store the next character of the name
 				//    use .charAt()
 	
