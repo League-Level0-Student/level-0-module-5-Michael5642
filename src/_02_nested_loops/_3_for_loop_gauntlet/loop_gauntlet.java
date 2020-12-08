@@ -1,11 +1,11 @@
 package _02_nested_loops._3_for_loop_gauntlet;
 
-import javax.swing.JOptionPane;
+
 
 public class loop_gauntlet {
 public static void main(String[] args) {
 	int counterHundred = 0;
-	/*//loop from 100 - 0
+	//loop from 100 - 0
 	for (int i = 0; i < 101; i++) {
 		System.out.println(100 - counterHundred);
 		
@@ -60,50 +60,45 @@ public static void main(String[] args) {
 	}
 	counterHundred = 0;
 	int counterHundred2 = 0;
+	String numList = counterHundred + " " + counterHundred2;
 	//loops for nested loop excercise 1
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 3; j++) {
-			System.out.println(counterHundred);
-		}
-		counterHundred = counterHundred + 1;
+	for (int i = 0; i < 9; i++) {
+		numList = counterHundred + " " + counterHundred2;
+		
+			System.out.println(numList);
+			counterHundred2 = counterHundred2 + 1;
+			if (i == 2 || i == 5) {
+				counterHundred2 = 0;
+				counterHundred = counterHundred + 1;
+			}
+		
 		
 	}
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 3; j++) {
-			System.out.println(counterHundred2);
-			counterHundred2 = counterHundred2 + 1;
-			if (counterHundred2%3 == 0 && counterHundred2 != 0) {
-				counterHundred2 = 0;
-			}
-		}
-	}*/
+	
 	counterHundred = 0;
 	//loop for the 1-9 3x3 grid
 	for (int i = 0; i < 3; i++) {
 		System.out.println((counterHundred + 1) +  " " + (counterHundred + 2) + " " + (counterHundred + 3));
 		counterHundred = counterHundred + 3;
 	}
+	
 	counterHundred = 0;
+	//loop for the 1-100 10x10 grid
 	for (int i = 0; i < 10; i++) {
 		System.out.println((counterHundred + 1) +  " " + (counterHundred + 2) + " " + (counterHundred + 3) + " " + (counterHundred + 4) +  " " + (counterHundred + 5) + " " + (counterHundred + 6) + " " + (counterHundred + 7) +  " " + (counterHundred + 8) + " " + (counterHundred + 9) + " " + (counterHundred + 10));
 		counterHundred = counterHundred + 10;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	counterHundred = 0;
+	String numList2 = "";
+	//loop for the * grid
+ 	for (int i = 0; i < 7; i++) {
+		System.out.println(numList2);
+		numList2 = numList2 + " *";
+	}
+	//counting down from 100 without prior code
+	for (int i = 0; i < 100; i++) {
+		System.out.println(-1*(i - 100));
+		}
 	
 	}
 }
