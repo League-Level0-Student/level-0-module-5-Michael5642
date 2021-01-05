@@ -33,7 +33,9 @@ jeremy.penDown();
 		//5. Use the robot to draw the number of polygons the user requested.
 		jeremy.setX(25);
 		for (int i = 0; i < polyNumber; i++) {
+			jeremy.setX(i*100);
 			polyShape(i);
+			
 			//jeremy.setX(100*i);
 		}
 		//6. Make it so your shapes do not overlap
